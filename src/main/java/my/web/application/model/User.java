@@ -40,7 +40,7 @@ public class User implements Serializable{
     @NotNull
     private String email;
 
-    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.REMOVE } )
     @org.hibernate.annotations.OnDelete(
             action = org.hibernate.annotations.OnDeleteAction.CASCADE
     )
@@ -49,6 +49,10 @@ public class User implements Serializable{
     public void addApplication(Application application) {
         application.setUser(this);
         applications.add(application);
+    }
+
+    public Set<Application> getApplications() {
+        return applications;
     }
 
     public User() {
