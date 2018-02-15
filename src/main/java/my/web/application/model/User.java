@@ -4,6 +4,8 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class User implements Serializable{
@@ -37,6 +39,17 @@ public class User implements Serializable{
 
     @NotNull
     private String email;
+
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
+    @org.hibernate.annotations.OnDelete(
+            action = org.hibernate.annotations.OnDeleteAction.CASCADE
+    )
+    private Set<Application> applications = new HashSet<>();
+
+    public void addApplication(Application application) {
+        application.setUser(this);
+        applications.add(application);
+    }
 
     public User() {
 
