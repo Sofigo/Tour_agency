@@ -35,7 +35,9 @@ public class UserServiceImpl implements IUserService {
         return userDAO.findById(id);
     }
 
-    @Override public User findById(Long id, LockMode lockMode) {
+    @Override
+    @Transactional
+    public User findById(Long id, LockMode lockMode) {
         return userDAO.findById(id, lockMode);
     }
 

@@ -1,14 +1,17 @@
 package my.web.application.model;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
 
 @Entity
-public class User implements Serializable{
+public class Application implements Serializable{
     @Id
-    @Column(name="user_id")
+    @Column(name="application_id")
     @GeneratedValue(generator = Constants.ID_GENERATOR)
     private long id;
 
@@ -32,13 +35,7 @@ public class User implements Serializable{
     @NotNull
     private String passport;
 
-    @NotNull
-    private String phoneNumber;
-
-    @NotNull
-    private String email;
-
-    public User() {
+    public Application() {
 
     }
 

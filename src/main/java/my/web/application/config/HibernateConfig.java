@@ -21,6 +21,7 @@ public class HibernateConfig {
         Properties hibernateProperties = new Properties();
         hibernateProperties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
         hibernateProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
+        hibernateProperties.setProperty("ibernate.use_sql_comments", "true");
         sessionFactory.setHibernateProperties(hibernateProperties);
 
         return sessionFactory;
