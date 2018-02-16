@@ -22,6 +22,7 @@ public class HibernateConfig {
         hibernateProperties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
         hibernateProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
         hibernateProperties.setProperty("ibernate.use_sql_comments", "true");
+        hibernateProperties.setProperty("validation-mode", "CALLBACK");//validation provider required
         sessionFactory.setHibernateProperties(hibernateProperties);
 
         return sessionFactory;
