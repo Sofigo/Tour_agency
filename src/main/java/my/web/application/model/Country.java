@@ -2,8 +2,8 @@ package my.web.application.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.Collection;
 
 @Entity
 public class Country implements Serializable {
@@ -13,7 +13,7 @@ public class Country implements Serializable {
     private long id;
 
     @OneToMany(mappedBy = "country", fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE } )
-    private Set<City> cities = new HashSet<>();
+    private Collection<City> cities = new ArrayList<>();
 
     private String name;
 

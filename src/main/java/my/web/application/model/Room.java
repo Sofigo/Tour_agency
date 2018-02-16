@@ -7,7 +7,7 @@ import java.io.Serializable;
 @Entity
 public class Room implements Serializable {
     @Id
-    @Column(name="country_id")
+    @Column(name="room_id")
     @GeneratedValue(generator = Constants.ID_GENERATOR)
     private long id;
 

@@ -4,15 +4,25 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-public class User implements Serializable{
+public class User implements Serializable {
     @Id
     @Column(name="user_id")
     @GeneratedValue(generator = Constants.ID_GENERATOR)
     private long id;
+
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE } )
+    private Collection<Application> applications = new ArrayList<>();
+
+    @ElementCollection(fetch = FetchType.LAZY)
+    @Enumerated(EnumType.STRING)
+    @JoinTable(name = "UserGrants", joinColumns = @JoinColumn(name = "user_id"))
+    private Set<Grants> grants = new HashSet<>();
 
     @NotNull
     @Size(
@@ -40,18 +50,24 @@ public class User implements Serializable{
     @NotNull
     private String email;
 
-    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.REMOVE } )
-    @org.hibernate.annotations.OnDelete(
-            action = org.hibernate.annotations.OnDeleteAction.CASCADE
-    )
-    private Set<Application> applications = new HashSet<>();
+
+
+    public Set<Grants> getGrants() {
+        return grants;
+    }
+
+    public void setGrants(Set<Grants> grants) {
+        this.grants = grants;
+    }
+
+
 
     public void addApplication(Application application) {
         application.setUser(this);
         applications.add(application);
     }
 
-    public Set<Application> getApplications() {
+    public Collection<Application> getApplications() {
         return applications;
     }
 
