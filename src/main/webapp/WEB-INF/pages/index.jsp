@@ -126,6 +126,12 @@
     $(document).ready(function(){
     $('.modal').modal();
   });
+    $(document).ready(function(){
+    $('select').formSelect();
+  });
+    $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
   </script>
    
         
@@ -306,6 +312,60 @@
     </div>
   </section>
 
+<!-- Search Form -->
+<section id="search" class="section-search scrollspy">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card-panel grey-text">
+          <h4>Пошук туру</h4>
+          <div class="input-field col s12">
+    <select>
+      <option value="" disabled selected>Оберіть</option>
+      <option value="1">Київ (Жуляни)</option>
+      <option value="2">Бориспіль</option>
+      <option value="3">Харків</option>
+      <option value="4">Львів</option>
+    </select>
+    <label>Місто вильоту</label>
+  </div>
+  <div class="input-field col s12">
+    <select>
+      <option value="" disabled selected>Оберіть</option>
+      <option value="1">Турція</option>
+      <option value="2">Франція</option>
+      <option value="3">Польша</option>
+    </select>
+    <label>Пункт призначення</label>
+  </div>
+  <select class="price-default">
+    <option value="" disabled selected>Ціна до</option>
+    <option value="1">10000</option>
+    <option value="2">20000</option>
+    <option value="3">30000</option>
+  </select>
+  <select class="hotel-default">
+    <option value="" disabled selected>Тип готелю</option>
+    <option value="1">3*</option>
+    <option value="2">4*</option>
+    <option value="3">5*</option>
+  </select>
+  <select class="meal-default">
+    <label>Тип харчування</label>
+    <option value="" disabled selected>Будь-яке харчування</option>
+    <option value="1">Сніданок</option>
+    <option value="2">Сніданок - Обід</option>
+    <option value="3">Сніданок - Вечеря</option>
+  </select>
+   <div class="input-field data-default">
+      <input type="text" class="datepicker">
+    <label>Дата вильоту</label>
+    </div> 
+  </div>
+      </div>
+    </div>
+  </div>
+</section>
   <!-- Section: Contact -->
   <section id="contact" class="section section-contact scrollspy">
     <div class="container">
