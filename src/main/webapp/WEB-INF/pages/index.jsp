@@ -205,12 +205,12 @@
     <div class="container">
       <div class="row">
         <h4 class="center">
-          <span class="teal-text">Popular Places</span> </h4>
+          <span class="teal-text">Популярні тури</span> </h4>
         <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
               <img src="https://image.ibb.co/hbEMux/resort1.jpg" alt="">
-              <span class="card-title">Cancun, Mexico</span>
+              <span class="card-title">Турція</span>
             </div>
             <div class="card-content">
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas aliquid fugiat corporis laudantium, architecto
@@ -316,10 +316,10 @@
 <section id="search" class="section-search scrollspy">
   <div class="container">
     <div class="row">
-      <div class="col s12 m6">
+      <div class="col s12 m7">
         <div class="card-panel grey-text">
           <h4>Пошук туру</h4>
-          <div class="input-field col s12">
+    <!-- <div class="input-field col s12">
     <select>
       <option value="" disabled selected>Оберіть</option>
       <option value="1">Київ (Жуляни)</option>
@@ -327,9 +327,18 @@
       <option value="3">Харків</option>
       <option value="4">Львів</option>
     </select>
+     <label>Місто вильоту</label>
+  </div>-->
+  <div class="input-field punkt-default">
+    <select>
+      <option value="" disabled selected>Оберіть</option>
+      <option value="1">Жуляни</option>
+      <option value="2">Бориспіль</option>
+      <option value="3">Львів</option>
+    </select>
     <label>Місто вильоту</label>
   </div>
-  <div class="input-field col s12">
+ <div class="input-field punkt-default">
     <select>
       <option value="" disabled selected>Оберіть</option>
       <option value="1">Турція</option>
@@ -338,6 +347,7 @@
     </select>
     <label>Пункт призначення</label>
   </div>
+
   <select class="price-default">
     <option value="" disabled selected>Ціна до</option>
     <option value="1">10000</option>
@@ -362,30 +372,24 @@
     <label>Дата вильоту</label>
     </div> 
   </div>
-      </div>
-    </div>
-  </div>
+</div>
+</div>
+</div>
 </section>
   <!-- Section: Contact -->
-  <section id="contact" class="section section-contact scrollspy">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="card-panel blue lighten-3 white-text center">
-            <i class="material-icons medium">email</i>
-            <h5>Contact Us For Booking</h5>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus sed praesentium delectus. Sit, mollitia
-              quo. Veniam repellat voluptas ipsum doloremque?</p>
-          </div>
-          <ul class="collection with-header">
-            <li class="collection-header">
-              <h4>Контакти</h4>
-            </li>
-            <li class="collection-item">Travel Agency</li>
-            <li class="collection-item">вул. Григорія Сковороди 10</li>
-            <li class="collection-item">Деталі за телефоном: +380988782311</li>
-          </ul>
-        </div>-->
+<section id="contact" class="section section-contact scrollspy">
+   <div class="container">
+     <div class="row">
+       <div class="col s12 m6">
+         <ul class="collection with-header">
+           <li class="collection-header">
+             <h4>Контакти</h4>
+           </li>
+           <li class="collection-item">Travel Agency</li>
+           <li class="collection-item">вул. Григорія Сковороди 10</li>
+           <li class="collection-item">Деталі за телефоном: +380988782311</li>
+         </ul>
+       </div>
 
       <!-- <div class="col s12 m6">
           <div class="card-panel grey lighten-3">
