@@ -100,12 +100,52 @@
       <img class="activator" src="img/hot1.jpg">
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
+      <span class="card-title activator grey-text text-darken-4">"Family" 4 зірки<i class="material-icons right">more_vert</i></span>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      <span class="card-title grey-text text-darken-4">Португалія<i class="material-icons right">close</i></span>
+      <p><table>
+        <thead>
+          <tr>
+              <th>Ціна</th>
+              <th>Тип кімнати</th>
+              <th>Тип харчування</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>300 $</td>
+            <td>1 місце</td>
+            <td>Все включено</td>
+          </tr>
+        </tbody>
+          <tr>
+            <td>200$</td>
+            <td>1 місце</td>
+            <td>Сніданок</td>
+          </tr>
+          <tr>
+            <td>500$</td>
+            <td>2 місця</td>
+            <td>Все включено</td>
+          </tr>
+          <tr>
+            <td>400$</td>
+            <td>2 місця</td>
+            <td>Сніданок</td>
+          </tr>
+           <tr>
+            <td>700$</td>
+            <td>Люкс</td>
+            <td>Сніданок-вечеря</td>
+          </tr>
+           <tr>
+            <td>1000$</td>
+            <td>Пентхауз</td>
+            <td>Все включено</td> 
+          </tr>
+        </tbody>
+      </table></p>
     </div>
   </div>
 </div>
@@ -118,12 +158,52 @@
       <img class="activator" src="img/hot2.jpg">
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
+      <span class="card-title activator grey-text text-darken-4">"Plaza" 5 зірок<i class="material-icons right">more_vert</i></span>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      <span class="card-title grey-text text-darken-4">Malta<i class="material-icons right">close</i></span>
+      <p><table>
+        <thead>
+          <tr>
+              <th>Ціна</th>
+              <th>Тип кімнати</th>
+              <th>Тип харчування</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>300 $</td>
+            <td>1 місце</td>
+            <td>Сніданок-вечеря</td>
+          </tr>
+        </tbody>
+          <tr>
+            <td>300$</td>
+            <td>1 місце</td>
+            <td>Сніданок-обід</td>
+          </tr>
+          <tr>
+            <td>500$</td>
+            <td>2 місця</td>
+            <td>Сніданок-обід</td>
+          </tr>
+          <tr>
+            <td>500$</td>
+            <td>2 місця</td>
+            <td>Сніданок-вечеря</td>
+          </tr>
+           <tr>
+            <td>1000$</td>
+            <td>Люкс</td>
+            <td>Сніданок-вечеря</td>
+          </tr>
+           <tr>
+            <td>1500$</td>
+            <td>Пентхауз</td>
+            <td>Все включено</td> 
+          </tr>
+        </tbody>
+      </table></p>
     </div>
   </div>
 </div>
@@ -136,12 +216,54 @@
       <img class="activator" src="img/hot3.jpg">
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
+
+      <span class="card-title activator grey-text text-darken-4">"Paradise" 4 зірки<i class="material-icons right">more_vert</i>
+      </span>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      <span class="card-title grey-text text-darken-4">Париж<i class="material-icons right">close</i></span>
+      <p><table>
+        <thead>
+          <tr>
+              <th>Ціна</th>
+              <th>Тип кімнати</th>
+              <th>Тип харчування</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>150 $</td>
+            <td>1 місце</td>
+            <td>Сніданок</td>
+          </tr>
+        </tbody>
+          <tr>
+            <td>200$</td>
+            <td>1 місця</td>
+            <td>Сніданок-вечеря</td>
+          </tr>
+          <tr>
+            <td>300$</td>
+            <td>1 місце</td>
+            <td>Все включено</td>
+          </tr>
+           <tr>
+            <td>300$</td>
+            <td>2 місця</td>
+            <td>Сніданок</td>
+          </tr>
+           <tr>
+            <td>350$</td>
+            <td>2 місця</td>
+            <td>Все включено</td> 
+          </tr>
+          <tr>
+            <td>600$</td>
+            <td>Пентхауз</td>
+            <td>Сніданок-вечеря</td> 
+          </tr>
+        </tbody>
+      </table></p>
     </div>
   </div>
 </div>
@@ -154,12 +276,52 @@
       <img class="activator" src="img/hot4.jpg">
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
+      <span class="card-title activator grey-text text-darken-4">"Malboro" 4 зірки<i class="material-icons right">more_vert</i></span>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      <span class="card-title grey-text text-darken-4">Нью Йорк<i class="material-icons right">close</i></span>
+      <p><table>
+        <thead>
+          <tr>
+              <th>Ціна</th>
+              <th>Тип кімнати</th>
+              <th>Тип харчування</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>150 $</td>
+            <td>1 місце</td>
+            <td>Сніданок-обід</td>
+          </tr>
+        </tbody>
+          <tr>
+            <td>200$</td>
+            <td>1 місця</td>
+            <td>Обід-вечеря</td>
+          </tr>
+          <tr>
+            <td>250$</td>
+            <td>1 місце</td>
+            <td>Все включено</td>
+          </tr>
+           <tr>
+            <td>250$</td>
+            <td>2 місця</td>
+            <td>Сніданок</td>
+          </tr>
+           <tr>
+            <td>300$</td>
+            <td>2 місця</td>
+            <td>Все включено</td> 
+          </tr>
+          <tr>
+            <td>500$</td>
+            <td>Пентхауз</td>
+            <td>Все включено</td> 
+          </tr>
+        </tbody>
+      </table></p>
     </div>
   </div>
 </div>
