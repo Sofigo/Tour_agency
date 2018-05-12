@@ -5,7 +5,7 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="C:\materialize-v1.0.0-beta\materialize\css\materialize.min.css">
+    <link rel="stylesheet" href="../materialize/css/materialize.min.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
@@ -16,7 +16,7 @@
 
     <body>
       <!-- Compiled and minified JavaScript -->
-    <script src="C:\materialize-v1.0.0-beta\materialize\js\materialize.min.js"></script>
+    <script src="../materialize/js/materialize.min.js"></script>
     
   <title>Travel Agency</title>
  

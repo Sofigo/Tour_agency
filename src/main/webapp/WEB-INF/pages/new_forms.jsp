@@ -1,3 +1,4 @@
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <DOCTYPE! html>
 <html>
  <head>
@@ -5,7 +6,7 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="C:\materialize-v1.0.0-beta\materialize\css\materialize.min.css">
+    <link rel="stylesheet" href="/materialize/css/materialize.min.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
@@ -16,7 +17,7 @@
 
     <body>
       <!-- Compiled and minified JavaScript -->
-    <script src="C:\materialize-v1.0.0-beta\materialize\js\materialize.min.js"></script>
+    <script src="../materialize/js/materialize.min.js"></script>
     
   <title>Admin</title>
  
@@ -28,7 +29,7 @@
           <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
            <ul class="right hide-on-med-and-down">
             <li>
-              <a href="index.html">Головна</a>
+              <a href="../index.jsp">Головна</a>
             </li>
            
 
@@ -60,28 +61,20 @@
         </thead>
 
         <tbody>
-          <tr>
-            <td>Alvin</td>
-            <td>Eclair</td>
-             <td>віаоівл</td>
-            <td>099347238</td>
-            <th>Email</th>
-          </tr>
-          <tr>
-            <td>Alan</td>
-            <td>Jellybean</td>
-             <td>віарівор</td>
-            <td>9483472987</td>
-            <th>Email</th>
-          </tr>
-          <tr>
-            <td>Jonathan</td>
-            <td>Lollipop</td>
-            <td>вілаоідлоа</td>
-            <td>30394830298</td>
-            <th>Email</th>
-          </tr>
+            <c:forEach items="${newApplications}" var="application">
+                <tr>
+                    <td>${application.surname}</td>
+                    <td>${application.name}</td>
+                    <td>${application.patronymic}</td>
+                    <td>${application.phoneNumber}</td>
+                    <td>${application.email}</td>
+                </tr>
+            </c:forEach>
         </tbody>
+
+
+
+
       </table>
       </div>
 

@@ -22,10 +22,6 @@ public class Tour implements Serializable {
     @Temporal(value = TemporalType.DATE)
     private Date departureDate;
 
-    @NotNull
-    @Temporal(value = TemporalType.DATE)
-    private Date arrivalDate;
-
     @Min(1)
     private int nightsAmount;
 

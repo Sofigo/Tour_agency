@@ -16,9 +16,6 @@ public class User implements Serializable {
     @GeneratedValue(generator = Constants.ID_GENERATOR)
     private long id;
 
-    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE } )
-    private Collection<Application> applications = new ArrayList<>();
-
     @ElementCollection(fetch = FetchType.LAZY)
     @Enumerated(EnumType.STRING)
     @JoinTable(name = "UserGrants", joinColumns = @JoinColumn(name = "user_id"))
@@ -60,21 +57,9 @@ public class User implements Serializable {
         this.grants = grants;
     }
 
-
-
-    public void addApplication(Application application) {
-        application.setUser(this);
-        applications.add(application);
-    }
-
-    public Collection<Application> getApplications() {
-        return applications;
-    }
-
     public User() {
 
     }
-
 
     public long getId() {
         return id;

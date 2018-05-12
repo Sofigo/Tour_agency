@@ -33,15 +33,11 @@ public class HibernateTest extends AbstractTransactionalJUnit4SpringContextTests
     public void testUser() {
         Session currentSession = sessionFactory.getCurrentSession();
         User user = new User();
-        Stream.generate(() -> new Application()).limit(10).forEach(a -> user.addApplication(a));
         user.getGrants().add(Grants.ADMIN);
         currentSession.persist(user);
-        long applicationId = 1005L;
         logger.debug("Before First Flush");
         currentSession.flush();
         logger.debug("After First Flush");
-        assertNotNull(currentSession.byId(Application.class).load(applicationId));
-        user.getApplications().stream().forEach(currentSession::delete);
         currentSession.delete(user);
         logger.debug("Before Second Flush");
         currentSession.flush();

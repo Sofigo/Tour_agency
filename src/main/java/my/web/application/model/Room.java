@@ -15,7 +15,11 @@ public class Room implements Serializable {
     @ManyToOne(fetch = FetchType.LAZY)
     private Hotel hotel;
 
-    private String name;
+    private String type;
+
+    private int peopleAmount;
+
+    private int price;
 
 
 }
