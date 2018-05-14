@@ -1,20 +1,22 @@
-<%@ page contentType="text/html;charset=UTF-8" %>
 <DOCTYPE! html>
 <html>
  <head>
-     <!--Import Google Icon Font-->
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <!--Import materialize.css-->
-     <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-     <!--Let browser know website is optimized for mobile-->
-     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
- </head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="C:\materialize-v1.0.0-beta\materialize\css\materialize.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
 
- <body>
- <!-- Compiled and minified JavaScript -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <body>
+      <!-- Compiled and minified JavaScript -->
+    <script src="C:\materialize-v1.0.0-beta\materialize\js\materialize.min.js"></script>
     
   <title>Travel Agency</title>
  
@@ -35,7 +37,7 @@
   <!-- Dropdown Structure -->
   <ul id='dropdown1' class='dropdown-content'>
     <li><a href="hotels.html">Готелі</a></li>
-    <li><a href="#!">Країни</a></li>
+    <li><a href="tours.html">Тури</a></li>
   </ul>
     <li><a href="#contact">Контакти</a></li>
      <!-- Modal Trigger -->
@@ -48,24 +50,42 @@
        <div class="row">
         <form class="col s12">
           <div class="row">
-            <div class="input-field col s6"> 
-              <i class="material-icons prefix">account</i>
+            <div class="input-field black-text col s6"> 
               <input type="text" class="validate" id="first_name">
-              <label for="first_name">ПІБ</label>
+              <label for="first_name">Прізвище</label>
             </div>
           </div>
           <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field black-text col s7"> 
+              <input type="text" class="validate" id="name">
+              <label for="name">Ім'я</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field black-text col s8"> 
+              <input type="text" class="validate" id="last_name">
+              <label for="last_name">По-батькові</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field black-text col s12">
               <i class="material-icons large pink-text prefix">phone</i>
-              <input type="password" id="password">
-              <label for="password">Мобільний телефон</label>
+              <input type="text" id="phone">
+              <label for="phone">Мобільний телефон</label>
             </div>
           </div>
           <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field black-text col s12">
               <i class="material-icons large pink-text prefix">mail</i>
               <input type="email" class="validate" id="email">
               <label for="email">Email</label>
+            </div>
+           </div>
+           <div class="row">
+            <div class="input-field black-text col s12">
+              <i class="material-icons large pink-text prefix">description</i>
+              <input type="email" class="validate" id="email">
+              <label for="email">Коментарі</label>
             </div>
            </div>
         </form>
@@ -73,9 +93,10 @@
   </div>
     <div class="modal-footer">
     <a href="#!" class="modal-action modal-close btn waves-effect 
-    waves-blue">Register</a>
+    waves-blue">Відправити</a>
   </div>
 </div>
+<!-- -->
           </ul>
         </div>
       </div>
@@ -159,45 +180,6 @@
       </div>
     </div>
   </section>-->
-
-  <!-- Section: Icon Boxes -->
-  <section class="section section-icons grey lighten-4 center">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="card-panel">
-            <i class="material-icons large  pink-text">room</i>
-            <h4>Міста</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, velit.</p>
-            <div class="card-action">
-          <a href="cities.html">Перейти</a>
-        </div>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card-panel">
-            <i class="material-icons large  pink-text">hotel</i>
-            <h4>Готелі</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, velit.</p>
-            <div class="card-action">
-          <a href="hotels.html">Перейти</a>
-        </div>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card-panel">
-            <i class="material-icons large pink-text">class</i>
-            <h4>Відгуки</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, velit.</p>
-            <div class="card-action">
-          <a href="#">Перейти</a>
-        </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Section: Popular -->
   <section id="popular" class="section section-popular scrollspy">
     <div class="container">
@@ -207,7 +189,7 @@
         <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
-              <img src="https://image.ibb.co/hbEMux/resort1.jpg" alt="">
+              <img src="img/c4.jpg" alt="">
               <span class="card-title">Турція</span>
             </div>
             <div class="card-content">
@@ -215,7 +197,7 @@
                 delectus?
               </p>
               <div class="card-action">
-          <a href="#">Перейти</a>
+          <a href="tours.html">Перейти</a>
         </div>
             </div>
           </div>
@@ -223,15 +205,15 @@
         <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
-              <img src="https://image.ibb.co/mn1egc/resort2.jpg" alt="">
-              <span class="card-title">The Bahamas</span>
+              <img src="img/c1.jpg" alt="">
+              <span class="card-title">Париж</span>
             </div>
             <div class="card-content">
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas aliquid fugiat corporis laudantium, architecto
                 delectus?
               </p>
               <div class="card-action">
-          <a href="#">Перейти</a>
+          <a href="tours.html">Перейти</a>
         </div>
             </div>
           </div>
@@ -239,15 +221,15 @@
         <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
-              <img src="https://image.ibb.co/mbCVnH/resort3.jpg" alt="">
-              <span class="card-title">Nova Scotia</span>
+              <img src="img/c4.jpg" alt="">
+              <span class="card-title">Лондон</span>
             </div>
             <div class="card-content">
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas aliquid fugiat corporis laudantium, architecto
                 delectus?
               </p>
               <div class="card-action">
-          <a href="#">Перейти</a>
+          <a href="tours.html">Перейти</a>
         </div>
             </div>
           </div>
@@ -271,7 +253,7 @@
           <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?travel" alt="">
         </div>
         <div class="col s12 m3">
-          <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?nature" alt="">
+          <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?bridge" alt="">
         </div>
         <div class="col s12 m3">
           <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?beach, travel" alt="">
@@ -286,7 +268,7 @@
           <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?traveling" alt="">
         </div>
         <div class="col s12 m3">
-          <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?bridge" alt="">
+          <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?nature" alt="">
         </div>
         <div class="col s12 m3">
           <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?boat, travel" alt="">

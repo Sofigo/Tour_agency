@@ -1,21 +1,22 @@
-<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
-<%@ page contentType="text/html;charset=UTF-8" %>
 <DOCTYPE! html>
 <html>
  <head>
-     <!--Import Google Icon Font-->
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <!--Import materialize.css-->
-     <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-     <!--Let browser know website is optimized for mobile-->
-     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
- </head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="C:\materialize-v1.0.0-beta\materialize\css\materialize.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
 
- <body>
- <!-- Compiled and minified JavaScript -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <body>
+      <!-- Compiled and minified JavaScript -->
+    <script src="C:\materialize-v1.0.0-beta\materialize\js\materialize.min.js"></script>
     
   <title>Admin</title>
  
@@ -27,7 +28,7 @@
           <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
            <ul class="right hide-on-med-and-down">
             <li>
-              <a href="../index.jsp">Головна</a>
+              <a href="index.html">Головна</a>
             </li>
            
 
@@ -58,17 +59,29 @@
           </tr>
         </thead>
 
-          <tbody>
-          <c:forEach items="${readyApplications}" var="application">
-              <tr>
-                  <td>${application.surname}</td>
-                  <td>${application.name}</td>
-                  <td>${application.patronymic}</td>
-                  <td>${application.phoneNumber}</td>
-                  <td>${application.email}</td>
-              </tr>
-          </c:forEach>
-          </tbody>
+        <tbody>
+          <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>віаоівл</td>
+            <td>099347238</td>
+            <th>Email</th>
+          </tr>
+          <tr>
+            <td>Alan</td>
+            <td>Jellybean</td>
+            <td>віарівор</td>
+            <td>9483472987</td>
+            <th>Email</th>
+          </tr>
+          <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>вілаоідлоа</td>
+            <td>30394830298</td>
+            <th>Email</th>
+          </tr>
+        </tbody>
       </table>
       </div>
 
