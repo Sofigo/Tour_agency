@@ -28,73 +28,72 @@
           <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
            <ul class="right hide-on-med-and-down">
             <li>
-              <a href="index.html">Головна</a>
+              <a href="index.jsp">Головна</a>
             </li>
            
 
   <!-- Dropdown Trigger -->
-  <li><a class='dropdown-trigger btn pink' href='#' data-target='dropdown1'>Пошук</a></li>
+  <li><a class='dropdown-trigger btn pink' href='#' data-target='dropdown1'>Інформація про</a></li>
   <!-- Dropdown Structure -->
   <ul id='dropdown1' class='dropdown-content'>
-    <li><a href="hotels.html">Готелі</a></li>
-    <li><a href="tours.html">Тури</a></li>
+    <li><a href="hotels.jsp">Готелі</a></li>
+    <li><a href="tours.jsp">Тури</a></li>
   </ul>
   <li><a href="#contact">Контакти</a></li>
   <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Заповнити заяву</a></li>
     
-     <!-- Modal Structure -->
+    <!-- Modal Structure -->
   <div id="modal1" class="modal">
     <div class="modal-content">
       <h4><span class="cyan-text text-darken-4">Заповніть заяву і ми вам передзвонимо</span></h4>
        <div class="row">
-        <form class="col s12">
+        <form class="col s12" action="#!">
           <div class="row">
             <div class="input-field black-text col s6"> 
-              <input type="text" class="validate" id="first_name">
+              <input type="text" class="validate" id="first_name" value="Горшкова">
               <label for="first_name">Прізвище</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field black-text col s7"> 
-              <input type="text" class="validate" id="name">
-              <label for="first_name">Ім'я</label>
+              <input type="text" class="validate" id="name" value="Софія">
+              <label for="name">Ім'я</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field black-text col s8"> 
-              <input type="text" class="validate" id="last_name">
-              <label for="first_name">По-батькові</label>
+              <input type="text" class="validate" id="last_name" value="Вячеславівна">
+              <label for="last_name">По-батькові</label>
             </div>
           </div>
-           <div class="row">
+          <div class="row">
             <div class="input-field black-text col s12">
               <i class="material-icons large pink-text prefix">phone</i>
-              <input type="text" id="phone">
+              <input type="number" id="phone" value="0988782311">
               <label for="phone">Мобільний телефон</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field black-text col s12">
               <i class="material-icons large pink-text prefix">mail</i>
-              <input type="email" class="validate" id="email">
+              <input type="email" class="validate" id="email" value="gorshkovasofia@gmail.com">
               <label for="email">Email</label>
             </div>
            </div>
            <div class="row">
             <div class="input-field black-text col s12">
               <i class="material-icons large pink-text prefix">description</i>
-              <input type="email" class="validate" id="email">
-              <label for="email">Коментарі</label>
+              <input type="text" id="comment" value="Цікавлять тури в Париж">
+              <label for="comment">Коментарі</label>
             </div>
            </div>
-        </form>
+          <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close btn waves-effect waves-blue">Відправити</a>
+          </div>
     </div>
   </div>
-    <div class="modal-footer">
-    <a href="#!" class="modal-action modal-close btn waves-effect 
-    waves-blue">Відправити</a>
-  </div>
 </div>
+<!-- -->
 </ul>
 </div>
 </div>
@@ -125,6 +124,7 @@
       <p><table>
         <thead>
           <tr>
+              <th>Місто вильоту</th>
               <th>Дата вильоту</th>
               <th>Кількість ночей</th>
               <th>Кількість дорослих</th>
@@ -136,6 +136,7 @@
         </thead>
         <tbody>
           <tr>
+            <th>Бориспіль</th>
             <td>12.06.2018</td>
             <td>7</td>
             <td>2</td>
@@ -146,6 +147,7 @@
           </tr>
         </tbody>
           <tr>
+            <th>Бориспіль</th>
             <td>19.06.2018</td>
             <td>10</td>
             <td>1</td>
@@ -154,7 +156,8 @@
             <td>Le Saint Paris</td>
             <td>2000$</td>
           </tr>
-          <tr>
+          <tr> 
+            <th>Жуляни</th>
             <td>20.06.2018</td>
             <td>5</td>
             <td>2</td>
@@ -164,6 +167,7 @@
             <td>3000$</td>
           </tr>
           <tr>
+            <td>Львів</td>
             <td>23.07.2018</td>
             <td>7</td>
             <td>2</td>
@@ -193,6 +197,7 @@
       <p><table>
         <thead>
           <tr>
+              <th>Місто вильоту</th>
               <th>Дата вильоту</th>
               <th>Кількість ночей</th>
               <th>Кількість дорослих</th>
@@ -204,6 +209,7 @@
         </thead>
         <tbody>
           <tr>
+            <th>Бориспіль</th>
             <td>21.05.2018</td>
             <td>7</td>
             <td>3</td>
@@ -214,6 +220,7 @@
           </tr>
         </tbody>
           <tr>
+            <th>Жуляни</th>
             <td>29.05.2018</td>
             <td>10</td>
             <td>1</td>
@@ -223,6 +230,7 @@
             <td>2050$</td>
           </tr>
           <tr>
+            <th>Жуляни</th>
             <td>30.05.2018</td>
             <td>5</td>
             <td>2</td>
@@ -232,6 +240,7 @@
             <td>3300$</td>
           </tr>
           <tr>
+            <th>Львів</th>
             <td>01.07.2018</td>
             <td>7</td>
             <td>2</td>
@@ -263,6 +272,7 @@
       <p><table>
         <thead>
           <tr>
+              <th>Місто вильоту</th>
               <th>Дата вильоту</th>
               <th>Кількість ночей</th>
               <th>Кількість дорослих</th>
@@ -274,6 +284,7 @@
         </thead>
         <tbody>
           <tr>
+            <th>Львів</th>
             <td>10.06.2018</td>
             <td>8</td>
             <td>2</td>
@@ -284,6 +295,7 @@
           </tr>
         </tbody>
           <tr>
+            <th>Бориспіль</th>
             <td>15.06.2018</td>
             <td>10</td>
             <td>1</td>
@@ -293,6 +305,7 @@
             <td>2500$</td>
           </tr>
           <tr>
+            <th>Бориспіль</th>
             <td>19.06.2018</td>
             <td>6</td>
             <td>2</td>
@@ -302,6 +315,7 @@
             <td>3000$</td>
           </tr>
           <tr>
+            <th>Львів</th>
             <td>25.07.2018</td>
             <td>8</td>
             <td>2</td>
@@ -330,6 +344,7 @@
       <p><table>
         <thead>
           <tr>
+              <th>Місто вильоту</th>
               <th>Дата вильоту</th>
               <th>Кількість ночей</th>
               <th>Кількість дорослих</th>
@@ -341,6 +356,7 @@
         </thead>
         <tbody>
           <tr>
+            <th>Бориспіль</th>
             <td>11.06.2018</td>
             <td>5</td>
             <td>2</td>
@@ -351,6 +367,7 @@
           </tr>
         </tbody>
           <tr>
+            <th>Бориспіль</th>
             <td>23.06.2018</td>
             <td>10</td>
             <td>1</td>
@@ -360,6 +377,7 @@
             <td>2400$</td>
           </tr>
           <tr>
+            <th>Бориспіль</th>
             <td>27.06.2018</td>
             <td>3</td>
             <td>2</td>
@@ -369,6 +387,7 @@
             <td>2000$</td>
           </tr>
           <tr>
+            <th>Жуляни</th>
             <td>01.07.2018</td>
             <td>7</td>
             <td>2</td>
@@ -399,6 +418,7 @@
       <p><table>
         <thead>
           <tr>
+              <th>Місто вильоту</th>
               <th>Дата вильоту</th>
               <th>Кількість ночей</th>
               <th>Кількість дорослих</th>
@@ -410,6 +430,7 @@
         </thead>
         <tbody>
           <tr>
+            <th>Жуляни</th>
             <td>14.06.2018</td>
             <td>7</td>
             <td>2</td>
@@ -420,6 +441,7 @@
           </tr>
         </tbody>
           <tr>
+            <th>Бориспіль</th>
             <td>19.06.2018</td>
             <td>10</td>
             <td>1</td>
@@ -429,6 +451,7 @@
             <td>2600$</td>
           </tr>
           <tr>
+            <th>Бориспіль</th>
             <td>20.06.2018</td>
             <td>5</td>
             <td>2</td>
@@ -438,6 +461,7 @@
             <td>3000$</td>
           </tr>
           <tr>
+            <th>Львів</th>
             <td>13.07.2018</td>
             <td>7</td>
             <td>2</td>
@@ -467,6 +491,7 @@
       <p><table>
         <thead>
           <tr>
+              <th>Місто вильоту</th>
               <th>Дата вильоту</th>
               <th>Кількість ночей</th>
               <th>Кількість дорослих</th>
@@ -478,6 +503,7 @@
         </thead>
         <tbody>
           <tr>
+            <th>Бориспіль</th>
             <td>15.06.2018</td>
             <td>7</td>
             <td>2</td>
@@ -488,6 +514,7 @@
           </tr>
         </tbody>
           <tr>
+            <th>Львів</th>
             <td>24.06.2018</td>
             <td>8</td>
             <td>1</td>
@@ -497,6 +524,7 @@
             <td>2000$</td>
           </tr>
           <tr>
+            <th>Бориспіль</th>
             <td>03.07.2018</td>
             <td>5</td>
             <td>2</td>
@@ -506,6 +534,7 @@
             <td>3700$</td>
           </tr>
           <tr>
+            <th>Львів</th>
             <td>23.07.2018</td>
             <td>10</td>
             <td>2</td>

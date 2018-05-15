@@ -10,12 +10,10 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
     <body>
-      <!-- Compiled and minified JavaScript -->
     <script src="C:\materialize-v1.0.0-beta\materialize\js\materialize.min.js"></script>
     
   <title>Admin</title>
@@ -36,8 +34,8 @@
   <li><a class='dropdown-trigger btn indigo darken-2' href='#' data-target='dropdown1'>Заяви</a></li>
   <!-- Dropdown Structure -->
   <ul id='dropdown1' class='dropdown-content'>
-   <li><a href="new_forms.html">Нові</a></li>
-    <li><a href="ready_forms.html">Оброблені</a></li>
+   <li><a href="new_forms.jsp">Нові</a></li>
+    <li><a href="ready_forms.jsp">Оброблені</a></li>
       </ul>
         <li><a href="#!">Вихід</a></li>
       </ul>
@@ -84,12 +82,6 @@
         </tbody>
       </table>
       </div>
-
-
-    
-     <!-- Modal Trigger -->
- 
-
 <!--JQuery -->
   <script type="text/javascript">
     $('.dropdown-trigger').dropdown();
