@@ -39,6 +39,7 @@
     <li><a href="hotels.html">Готелі</a></li>
     <li><a href="tours.html">Тури</a></li>
   </ul>
+  <li><a href="#contact">Контакти</a></li>
   <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Заповнити заяву</a></li>
     
      <!-- Modal Structure -->
@@ -140,8 +141,8 @@
             <td>2</td>
             <td>1</td>
             <td>Все включено</td>
-            <td>Mercure</td>
-            <td>2,450$</td>
+            <td>Hotel de Louvre</td>
+            <td>2450$</td>
           </tr>
         </tbody>
           <tr>
@@ -150,7 +151,7 @@
             <td>1</td>
             <td>-</td>
             <td>Сніданок</td>
-            <td>Opera</td>
+            <td>Le Saint Paris</td>
             <td>2000$</td>
           </tr>
           <tr>
@@ -159,7 +160,7 @@
             <td>2</td>
             <td>-</td>
             <td>Сніданок-вечеря</td>
-            <td>Hilton</td>
+            <td>Shereeton</td>
             <td>3000$</td>
           </tr>
           <tr>
@@ -168,7 +169,7 @@
             <td>2</td>
             <td>2</td>
             <td>Все включено</td>
-            <td>George Washington</td>
+            <td>New York</td>
             <td>3000$</td>
           </tr>
         </tbody>
@@ -203,41 +204,41 @@
         </thead>
         <tbody>
           <tr>
-            <td>12.06.2018</td>
+            <td>21.05.2018</td>
             <td>7</td>
-            <td>2</td>
-            <td>1</td>
+            <td>3</td>
+            <td>-</td>
             <td>Все включено</td>
             <td>Mercure</td>
-            <td>2,450$</td>
+            <td>2350$</td>
           </tr>
         </tbody>
           <tr>
-            <td>19.06.2018</td>
+            <td>29.05.2018</td>
             <td>10</td>
             <td>1</td>
             <td>-</td>
-            <td>Сніданок</td>
-            <td>Opera</td>
-            <td>2000$</td>
+            <td>Сніданок-обід</td>
+            <td>La Meridien Picadilly</td>
+            <td>2050$</td>
           </tr>
           <tr>
-            <td>20.06.2018</td>
+            <td>30.05.2018</td>
             <td>5</td>
             <td>2</td>
             <td>-</td>
             <td>Сніданок-вечеря</td>
-            <td>Hilton</td>
-            <td>3000$</td>
+            <td>Grange St Pauls</td>
+            <td>3300$</td>
           </tr>
           <tr>
-            <td>23.07.2018</td>
+            <td>01.07.2018</td>
             <td>7</td>
             <td>2</td>
             <td>2</td>
             <td>Все включено</td>
-            <td>George Washington</td>
-            <td>3000$</td>
+            <td>aLoft</td>
+            <td>3500$</td>
           </tr>
         </tbody>
       </table></p>
@@ -273,49 +274,47 @@
         </thead>
         <tbody>
           <tr>
-            <td>12.06.2018</td>
-            <td>7</td>
+            <td>10.06.2018</td>
+            <td>8</td>
             <td>2</td>
             <td>1</td>
             <td>Все включено</td>
-            <td>Mercure</td>
-            <td>2,450$</td>
+            <td>St Regis</td>
+            <td>2450$</td>
           </tr>
         </tbody>
           <tr>
-            <td>19.06.2018</td>
+            <td>15.06.2018</td>
             <td>10</td>
             <td>1</td>
             <td>-</td>
             <td>Сніданок</td>
-            <td>Opera</td>
-            <td>2000$</td>
+            <td>Le Royal Meridien</td>
+            <td>2500$</td>
           </tr>
           <tr>
-            <td>20.06.2018</td>
-            <td>5</td>
+            <td>19.06.2018</td>
+            <td>6</td>
+            <td>2</td>
+            <td>1</td>
+            <td>Сніданок-вечеря</td>
+            <td>Ajman</td>
+            <td>3000$</td>
+          </tr>
+          <tr>
+            <td>25.07.2018</td>
+            <td>8</td>
             <td>2</td>
             <td>-</td>
-            <td>Сніданок-вечеря</td>
-            <td>Hilton</td>
-            <td>3000$</td>
-          </tr>
-          <tr>
-            <td>23.07.2018</td>
-            <td>7</td>
-            <td>2</td>
-            <td>2</td>
             <td>Все включено</td>
-            <td>George Washington</td>
-            <td>3000$</td>
+            <td>Four Points</td>
+            <td>3500$</td>
           </tr>
         </tbody>
       </table></p>
     </div>
   </div>
 </div>
-
-
 <!--City 4-->
   <div class="col s6">
   <div class="card">
@@ -342,40 +341,40 @@
         </thead>
         <tbody>
           <tr>
-            <td>12.06.2018</td>
-            <td>7</td>
+            <td>11.06.2018</td>
+            <td>5</td>
             <td>2</td>
             <td>1</td>
             <td>Все включено</td>
-            <td>Mercure</td>
-            <td>2,450$</td>
+            <td>Hilton</td>
+            <td>2650$</td>
           </tr>
         </tbody>
           <tr>
-            <td>19.06.2018</td>
+            <td>23.06.2018</td>
             <td>10</td>
             <td>1</td>
             <td>-</td>
             <td>Сніданок</td>
-            <td>Opera</td>
+            <td>Plaza</td>
+            <td>2400$</td>
+          </tr>
+          <tr>
+            <td>27.06.2018</td>
+            <td>3</td>
+            <td>2</td>
+            <td>-</td>
+            <td>Все включено</td>
+            <td>Family</td>
             <td>2000$</td>
           </tr>
           <tr>
-            <td>20.06.2018</td>
-            <td>5</td>
-            <td>2</td>
-            <td>-</td>
-            <td>Сніданок-вечеря</td>
-            <td>Hilton</td>
-            <td>3000$</td>
-          </tr>
-          <tr>
-            <td>23.07.2018</td>
+            <td>01.07.2018</td>
             <td>7</td>
             <td>2</td>
             <td>2</td>
-            <td>Все включено</td>
-            <td>George Washington</td>
+            <td>Обід</td>
+            <td>Glorious</td>
             <td>3000$</td>
           </tr>
         </tbody>
@@ -411,13 +410,13 @@
         </thead>
         <tbody>
           <tr>
-            <td>12.06.2018</td>
+            <td>14.06.2018</td>
             <td>7</td>
             <td>2</td>
             <td>1</td>
             <td>Все включено</td>
-            <td>Mercure</td>
-            <td>2,450$</td>
+            <td>Soko</td>
+            <td>2350$</td>
           </tr>
         </tbody>
           <tr>
@@ -426,26 +425,26 @@
             <td>1</td>
             <td>-</td>
             <td>Сніданок</td>
-            <td>Opera</td>
-            <td>2000$</td>
+            <td>Pestana</td>
+            <td>2600$</td>
           </tr>
           <tr>
             <td>20.06.2018</td>
             <td>5</td>
             <td>2</td>
-            <td>-</td>
+            <td>1</td>
             <td>Сніданок-вечеря</td>
-            <td>Hilton</td>
+            <td>Madeira</td>
             <td>3000$</td>
           </tr>
           <tr>
-            <td>23.07.2018</td>
+            <td>13.07.2018</td>
             <td>7</td>
             <td>2</td>
             <td>2</td>
             <td>Все включено</td>
-            <td>George Washington</td>
-            <td>3000$</td>
+            <td>Boma</td>
+            <td>3500$</td>
           </tr>
         </tbody>
       </table></p>
@@ -479,41 +478,41 @@
         </thead>
         <tbody>
           <tr>
-            <td>12.06.2018</td>
+            <td>15.06.2018</td>
             <td>7</td>
             <td>2</td>
-            <td>1</td>
+            <td>-</td>
             <td>Все включено</td>
-            <td>Mercure</td>
-            <td>2,450$</td>
+            <td>St Regis</td>
+            <td>2450$</td>
           </tr>
         </tbody>
           <tr>
-            <td>19.06.2018</td>
-            <td>10</td>
+            <td>24.06.2018</td>
+            <td>8</td>
             <td>1</td>
             <td>-</td>
-            <td>Сніданок</td>
-            <td>Opera</td>
+            <td>Сніданок-вечеря</td>
+            <td>Belissimo</td>
             <td>2000$</td>
           </tr>
           <tr>
-            <td>20.06.2018</td>
+            <td>03.07.2018</td>
             <td>5</td>
             <td>2</td>
             <td>-</td>
             <td>Сніданок-вечеря</td>
-            <td>Hilton</td>
-            <td>3000$</td>
+            <td>Heritage</td>
+            <td>3700$</td>
           </tr>
           <tr>
             <td>23.07.2018</td>
-            <td>7</td>
+            <td>10</td>
             <td>2</td>
             <td>2</td>
             <td>Все включено</td>
-            <td>George Washington</td>
-            <td>3000$</td>
+            <td>Four seasons</td>
+            <td>4000$</td>
           </tr>
         </tbody>
       </table></p>
@@ -524,15 +523,21 @@
 </body>
 <!-- Footer -->
   <footer class="page-footer cyan">
-          <div class="container">
-            <div class="row">
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2018 Copyright Travel Agency
-            </div>
-          </div>
-        </footer>
+    <section id="contact" class="section section-contact scrollspy">
+    <div class="container">
+      Контакти
+    </div>
+    <div class="container">
+    вул. Григорія Сковороди 10
+    </div>
+    <div class="container">
+    Деталі за телефоном: +380988782311
+    </div> 
+  </section>
+    <div class="footer-copyright">
+    <div class="container">
+    © 2018 Copyright Travel Agency
+     </div>
+   </div>
+ </footer>
 </html>
-
