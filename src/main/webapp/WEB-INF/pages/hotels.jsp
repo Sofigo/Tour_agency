@@ -1,19 +1,19 @@
-<%@ page contentType="text/html;charset=UTF-8" %>
 <DOCTYPE! html>
 <html>
  <head>
-     <!--Import Google Icon Font-->
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <!--Import materialize.css-->
-     <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-     <!--Let browser know website is optimized for mobile-->
-     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="C:\materialize-v1.0.0-beta\materialize\css\materialize.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
-      <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="C:\materialize-v1.0.0-beta\materialize\js\materialize.min.js"></script>
     
   <title>Hotels</title>
     <div class="navbar-fixed">
@@ -132,32 +132,6 @@
             <td>Все включено</td>
           </tr>
         </tbody>
-          <tr>
-            <td>200$</td>
-            <td>1 місце</td>
-            <td>Сніданок</td>
-          </tr>
-          <tr>
-            <td>500$</td>
-            <td>2 місця</td>
-            <td>Все включено</td>
-          </tr>
-          <tr>
-            <td>400$</td>
-            <td>2 місця</td>
-            <td>Сніданок</td>
-          </tr>
-           <tr>
-            <td>700$</td>
-            <td>Люкс</td>
-            <td>Сніданок-вечеря</td>
-          </tr>
-           <tr>
-            <td>1000$</td>
-            <td>Пентхауз</td>
-            <td>Все включено</td> 
-          </tr>
-        </tbody>
       </table></p>
     </div>
 </div>
@@ -187,32 +161,6 @@
             <td>250 $</td>
             <td>1 місце</td>
             <td>Все включено</td>
-          </tr>
-        </tbody>
-          <tr>
-            <td>200$</td>
-            <td>1 місце</td>
-            <td>Сніданок</td>
-          </tr>
-          <tr>
-            <td>300$</td>
-            <td>2 місця</td>
-            <td>Сніданок-обід</td>
-          </tr>
-          <tr>
-            <td>320$</td>
-            <td>2 місця</td>
-            <td>Сніданок-вечеря</td>
-          </tr>
-           <tr>
-            <td>450$</td>
-            <td>3 місця</td>
-            <td>Сніданок-вечеря</td>
-          </tr>
-           <tr>
-            <td>1000$</td>
-            <td>Пентхауз</td>
-            <td>Все включено</td> 
           </tr>
         </tbody>
       </table></p>
@@ -248,32 +196,6 @@
             <td>Сніданок</td>
           </tr>
         </tbody>
-          <tr>
-            <td>150$</td>
-            <td>1 місце</td>
-            <td>Сніданок-обід</td>
-          </tr>
-          <tr>
-            <td>250$</td>
-            <td>2 місця</td>
-            <td>Сніданок-обід</td>
-          </tr>
-          <tr>
-            <td>300$</td>
-            <td>2 місця</td>
-            <td>Сніданок-вечеря</td>
-          </tr>
-           <tr>
-            <td>1000$</td>
-            <td>3 місця</td>
-            <td>Сніданок-вечеря</td>
-          </tr>
-           <tr>
-            <td>1500$</td>
-            <td>Пентхауз</td>
-            <td>Все включено</td> 
-          </tr>
-        </tbody>
       </table></p>
     </div>
   </div>
@@ -303,33 +225,7 @@
             <td>220 $</td>
             <td>1 місце</td>
             <td>Сніданок-вечеря</td>
-          </tr>
-        </tbody>
-          <tr>
-            <td>220$</td>
-            <td>1 місце</td>
-            <td>Сніданок-обід</td>
-          </tr>
-          <tr>
-            <td>400$</td>
-            <td>2 місця</td>
-            <td>Сніданок-обід</td>
-          </tr>
-          <tr>
-            <td>400$</td>
-            <td>2 місця</td>
-            <td>Сніданок-вечеря</td>
-          </tr>
-           <tr>
-            <td>1000$</td>
-            <td>4 місця</td>
-            <td>Сніданок-вечеря</td>
-          </tr>
-           <tr>
-            <td>1500$</td>
-            <td>Пентхауз</td>
-            <td>Все включено</td> 
-          </tr>
+          </tr>          
         </tbody>
       </table></p>
     </div>
