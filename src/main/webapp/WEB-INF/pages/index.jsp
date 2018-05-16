@@ -119,8 +119,8 @@
       <li>
         <img src="img/tr2.jpg"> 
         <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          <h3>Не зволікай!</h3>
+          <h5 class="light grey-text text-lighten-3">Наважся на мрію.</h5>
           <button data-target="modal1" class="btn modal-trigger">Заповнити заяву</button>
         </div>
       </li>
@@ -153,11 +153,10 @@
           <div class="card">
             <div class="card-image">
               <img src="img/c4.jpg" alt="">
-              <span class="card-title">Турція</span>
+              <span class="card-title">Стамбул</span>
             </div>
             <div class="card-content">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas aliquid fugiat corporis laudantium, architecto
-                delectus?
+              <p>Стародавнє місто Стамбул з його історією та незабутньою культурою. Заворожує та дарує справжі відпочино тілом і душею.
               </p>
               <div class="card-action">
           <a href="tours.html">Перейти</a>
@@ -172,8 +171,7 @@
               <span class="card-title">Париж</span>
             </div>
             <div class="card-content">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas aliquid fugiat corporis laudantium, architecto
-                delectus?
+              <p>Місто кохання та щасливих людей! Опинившись тут ише один раз, Париж назавжди залишить свій романтичний слід у вашому серці.
               </p>
               <div class="card-action">
           <a href="tours.jsp">Перейти</a>
@@ -184,12 +182,11 @@
         <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
-              <img src="img/c4.jpg" alt="">
+              <img src="img/c2.jpg" alt="">
               <span class="card-title">Лондон</span>
             </div>
             <div class="card-content">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas aliquid fugiat corporis laudantium, architecto
-                delectus?
+              <p>Чудовий,п`янкий Лондон - серце Великобританії. Різномаїття культур, насичена історія, домашні кафе - все це ви зустрінете саме в Лондоні.
               </p>
               <div class="card-action">
           <a href="tours.jsp">Перейти</a>
@@ -219,17 +216,19 @@
  <div class="input-field punkt-default">
     <select>
       <option value="" disabled selected>Оберіть</option>
-      <option value="1">Турція</option>
-      <option value="2">Франція</option>
-      <option value="3">Польша</option>
+      <option value="1">Стамбул</option>
+      <option value="2">Париж</option>
+      <option value="3">Дубай</option>
+      <option value="3">Балі</option>
+      <option value="3">Лісабон</option>
     </select>
     <label>Пункт призначення</label>
   </div>
   <select class="price-default">
     <option value="" disabled selected>Ціна до</option>
-    <option value="1">10000</option>
-    <option value="2">20000</option>
-    <option value="3">30000</option>
+    <option value="1">200 $</option>
+    <option value="2">400 $</option>
+    <option value="3">2000 $</option>
   </select>
   <select class="hotel-default">
     <option value="" disabled selected>Тип готелю</option>
@@ -243,6 +242,9 @@
     <option value="1">Сніданок</option>
     <option value="2">Сніданок - Обід</option>
     <option value="3">Сніданок - Вечеря</option>
+    <option value="4">Обід</option>
+    <option value="5">Все включеноі</option>
+
   </select>
    <div class="input-field data-default">
       <input type="text" class="datepicker">
