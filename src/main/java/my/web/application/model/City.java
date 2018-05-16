@@ -13,10 +13,6 @@ public class City implements Serializable {
     @GeneratedValue(generator = Constants.ID_GENERATOR)
     private long id;
 
-    @NotNull
-    @ManyToOne(fetch = FetchType.LAZY)
-    private Country country;
-
     @OneToMany(mappedBy = "city", fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE } )
     private Collection<Hotel> hotels = new ArrayList<>();
 

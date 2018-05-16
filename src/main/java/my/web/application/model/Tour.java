@@ -15,10 +15,6 @@ public class Tour implements Serializable {
     private long id;
 
     @NotNull
-    @ManyToOne(fetch = FetchType.LAZY)
-    private Room room;
-
-    @NotNull
     @Temporal(value = TemporalType.DATE)
     private Date departureDate;
 
@@ -28,9 +24,8 @@ public class Tour implements Serializable {
     @Min(1)
     private int adultsAmount;
 
-    @Min(0)
-    private int kidsAmount;
-
     @Min(1)
     private long price;
+
+    private String foodType;
 }

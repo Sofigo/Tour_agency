@@ -19,9 +19,6 @@ public class Hotel implements Serializable {
     @ManyToOne(fetch = FetchType.LAZY)
     private City city;
 
-    @OneToMany(mappedBy = "hotel", fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE } )
-    private Collection<Room> rooms = new ArrayList<>();
-
     @NotNull
     private String name;
 
