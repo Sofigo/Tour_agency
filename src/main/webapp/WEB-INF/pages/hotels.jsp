@@ -84,8 +84,9 @@
             </div>
            </div>
           <div class="modal-footer">
-          <a href="#!" class="modal-action modal-close btn waves-effect waves-blue">Відправити</a>
+          <input type="submit" value="Відправити">
           </div>
+        </form>
     </div>
   </div>
 </div>

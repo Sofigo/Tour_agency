@@ -44,7 +44,7 @@
     <div class="modal-content">
       <h4><span class="cyan-text text-darken-4">Заповніть заяву і ми вам передзвонимо</span></h4>
        <div class="row">
-        <form class="col s12" action="#!">
+        <form class="col s12" action="/hotels.jsp">
           <div class="row">
             <div class="input-field black-text col s6"> 
               <input type="text" class="validate" id="first_name" value="Горшкова">
@@ -85,8 +85,9 @@
             </div>
            </div>
           <div class="modal-footer">
-          <a href="#!" class="modal-action modal-close btn waves-effect waves-blue">Відправити</a>
+          <input type="submit" value="Відправити">
           </div>
+         </form> 
     </div>
   </div>
 </div>
@@ -175,7 +176,7 @@
                 delectus?
               </p>
               <div class="card-action">
-          <a href="tours.html">Перейти</a>
+          <a href="tours.jsp">Перейти</a>
         </div>
             </div>
           </div>
@@ -191,7 +192,7 @@
                 delectus?
               </p>
               <div class="card-action">
-          <a href="tours.html">Перейти</a>
+          <a href="tours.jsp">Перейти</a>
         </div>
             </div>
           </div>
@@ -248,8 +249,7 @@
     <label>Дата вильоту</label>
     </div> 
     <div class="modal-footer">
-    <a href="#!" class="modal-action modal-close btn waves-effect 
-    waves-blue">Пошук</a>
+    <input type="submit" value="Пошук">
   </div>
   </div>
 </form>
