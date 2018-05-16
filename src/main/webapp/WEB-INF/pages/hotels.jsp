@@ -115,7 +115,7 @@
       <span class="card-title activator grey-text text-darken-4">"Soko" 4 зірки<i class="material-icons right">more_vert</i></span>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Португалія<i class="material-icons right">close</i></span>
+      <span class="card-title grey-text text-darken-4">Лісабон<i class="material-icons right">close</i></span>
       <p><table>
         <thead>
           <tr>
@@ -146,7 +146,7 @@
       <span class="card-title activator grey-text text-darken-4">"Pestana" 3 зірки<i class="material-icons right">more_vert</i></span>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Португалія<i class="material-icons right">close</i></span>
+      <span class="card-title grey-text text-darken-4">Лісабон<i class="material-icons right">close</i></span>
       <p><table>
         <thead>
           <tr>
@@ -210,7 +210,7 @@
       <span class="card-title activator grey-text text-darken-4">"Boma" 5 зірок<i class="material-icons right">more_vert</i></span>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Португалія<i class="material-icons right">close</i></span>
+      <span class="card-title grey-text text-darken-4">Лісабон<i class="material-icons right">close</i></span>
       <p><table>
         <thead>
           <tr>
@@ -945,7 +945,7 @@
 </span>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Дубаї<i class="material-icons right">close</i></span>
+      <span class="card-title grey-text text-darken-4">Дубай<i class="material-icons right">close</i></span>
       <p><table>
         <thead>
           <tr>
@@ -1003,7 +1003,7 @@
       </span>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Дубаї<i class="material-icons right">close</i></span>
+      <span class="card-title grey-text text-darken-4">Дубай<i class="material-icons right">close</i></span>
       <p><table>
         <thead>
           <tr>
@@ -1063,7 +1063,7 @@
 </span>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Дубаї<i class="material-icons right">close</i></span>
+      <span class="card-title grey-text text-darken-4">Дубай<i class="material-icons right">close</i></span>
       <p><table>
         <thead>
           <tr>
@@ -1120,7 +1120,7 @@
       </span>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Дубаї<i class="material-icons right">close</i></span>
+      <span class="card-title grey-text text-darken-4">Дубай<i class="material-icons right">close</i></span>
       <p><table>
         <thead>
           <tr>
