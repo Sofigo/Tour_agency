@@ -9,7 +9,7 @@ import java.util.Collection;
 @Entity
 public class City implements Serializable {
     @Id
-    @Column(name="country_id")
+    @Column(name="city_id")
     @GeneratedValue(generator = Constants.ID_GENERATOR)
     private long id;
 

@@ -26,6 +26,11 @@ public class Application implements Serializable {
     @NotNull
     private String email;
 
+    @NotNull
+    private String patronymic;
+
+    private boolean fulfilled;
+
     public String getPatronymic() {
         return patronymic;
     }
@@ -33,10 +38,6 @@ public class Application implements Serializable {
     public void setPatronymic(String patronymic) {
         this.patronymic = patronymic;
     }
-
-    @NotNull
-
-    private String patronymic;
 
     public String getSurname() {
         return surname;
@@ -74,8 +75,15 @@ public class Application implements Serializable {
 
     }
 
-
     public long getId() {
         return id;
+    }
+
+    public boolean isFulfilled() {
+        return fulfilled;
+    }
+
+    public void setFulfilled(boolean fulfilled) {
+        this.fulfilled = fulfilled;
     }
 }

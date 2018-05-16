@@ -10,7 +10,7 @@ import java.util.Date;
 public class Tour implements Serializable {
 
     @Id
-    @Column(name="country_id")
+    @Column(name="tour_id")
     @GeneratedValue(generator = Constants.ID_GENERATOR)
     private long id;
 

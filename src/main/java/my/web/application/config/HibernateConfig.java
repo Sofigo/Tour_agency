@@ -40,7 +40,6 @@ public class HibernateConfig {
         dataSource.setPassword("");
         dataSource.setInitialSize(5);
         dataSource.setMaxActive(10);
-        System.out.println(dataSource.getUrl());
         return dataSource;
     }
 
