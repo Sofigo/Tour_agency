@@ -53,30 +53,35 @@
               <th>По-батькові</th>
               <th>ТЕЛЕФОН</th>
               <th>Email</th>
+              <th>Коментарі</th>
+
           </tr>
         </thead>
 
         <tbody>
           <tr>
-            <td>Alvin</td>
-            <td>Eclair</td>
-             <td>віаоівл</td>
-            <td>099347238</td>
-            <th>Email</th>
+            <td>Петренко</td>
+            <td>Петро</td>
+             <td>Петрович</td>
+            <td>0988782312</td>
+            <th>petya@hotmail.com</th>
+            <th>Цікавлять тури в Парижі</th>
           </tr>
           <tr>
-            <td>Alan</td>
-            <td>Jellybean</td>
-             <td>віарівор</td>
-            <td>9483472987</td>
-            <th>Email</th>
+            <td>Іваненко</td>
+            <td>Іван</td>
+             <td>Іванович</td>
+            <td>0951775530</td>
+            <th>ivan253@hotmail.com</th>
+            <th>Цікавлять тури в Стамбулі</th>
           </tr>
           <tr>
-            <td>Jonathan</td>
-            <td>Lollipop</td>
-            <td>вілаоідлоа</td>
-            <td>30394830298</td>
-            <th>Email</th>
+            <td>Юхименко</td>
+            <td>Людмила</td>
+            <td>Степанівна</td>
+            <td>0938302989</td>
+            <th>step121@gmail.com</th>
+            <th>Цікавлять тури в Лондоні</th>
           </tr>
         </tbody>
       </table>

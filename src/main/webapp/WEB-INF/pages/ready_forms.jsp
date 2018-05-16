@@ -53,31 +53,35 @@
               <th>По-батькові</th>
               <th>ТЕЛЕФОН</th>
               <th>Email</th>
+              <th>Коментарі</th>
 
           </tr>
         </thead>
 
         <tbody>
           <tr>
-            <td>Alvin</td>
-            <td>Eclair</td>
-            <td>віаоівл</td>
-            <td>099347238</td>
-            <th>Email</th>
+            <td>Горшкова</td>
+            <td>Софія</td>
+            <td>Вячеславівна</td>
+            <td>0993472386</td>
+            <th>gorshkova@gmail.com</th>
+            <th>Цікавлять тури в Парижі</th>
           </tr>
           <tr>
-            <td>Alan</td>
-            <td>Jellybean</td>
-            <td>віарівор</td>
-            <td>9483472987</td>
-            <th>Email</th>
+            <td>Бгачек</td>
+            <td>Елизавета</td>
+            <td>Миколаївна</td>
+            <td>0964729878</td>
+            <th>bogacjek@gmail.com</th>
+            <th>Цікавлять тури в Дубай</th>
           </tr>
           <tr>
-            <td>Jonathan</td>
-            <td>Lollipop</td>
-            <td>вілаоідлоа</td>
-            <td>30394830298</td>
-            <th>Email</th>
+            <td>Василенко</td>
+            <td>Василь</td>
+            <td>Васильович</td>
+            <td>0958302981</td>
+            <th>dasjsa@gmail.com</th>
+            <th>Цікавлять тури в Лісабоні</th>
           </tr>
         </tbody>
       </table>
