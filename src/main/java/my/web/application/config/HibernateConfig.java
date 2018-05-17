@@ -22,7 +22,7 @@ public class HibernateConfig {
         sessionFactory.setDataSource(dataSource());
         sessionFactory.setPackagesToScan("my.web.application.model");
         Properties hibernateProperties = new Properties();
-        hibernateProperties.setProperty("hibernate.hbm2ddl.auto", "update");
+        hibernateProperties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
         hibernateProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
         hibernateProperties.setProperty("hibernate.use_sql_comments", "true");
         hibernateProperties.setProperty("validation-mode", "CALLBACK");//validation provider required

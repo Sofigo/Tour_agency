@@ -15,9 +15,8 @@ public class Hotel implements Serializable {
     @GeneratedValue(generator = Constants.ID_GENERATOR)
     private long id;
 
-    @NotNull
-    @ManyToOne(fetch = FetchType.LAZY)
-    private City city;
+    @OneToMany(mappedBy = "hotel", fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE } )
+    private Collection<Tour> tours = new ArrayList<>();
 
     @NotNull
     private String name;
@@ -26,5 +25,9 @@ public class Hotel implements Serializable {
     @Max(5)
     private int starsAmount;
 
+    private String image;
 
+    @NotNull
+    @ManyToOne(fetch = FetchType.LAZY)
+    private City city;
 }

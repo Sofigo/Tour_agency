@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 @Entity
-public class City implements Serializable {
+public class City {
     @Id
     @Column(name="city_id")
     @GeneratedValue(generator = Constants.ID_GENERATOR)
@@ -18,5 +18,5 @@ public class City implements Serializable {
 
     private String name;
 
-
+    private String image;
 }

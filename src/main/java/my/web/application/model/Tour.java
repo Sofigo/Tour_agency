@@ -18,6 +18,12 @@ public class Tour implements Serializable {
     @Temporal(value = TemporalType.DATE)
     private Date departureDate;
 
+    private String departureAirport;
+
+    @NotNull
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Hotel hotel;
+
     @Min(1)
     private int nightsAmount;
 
