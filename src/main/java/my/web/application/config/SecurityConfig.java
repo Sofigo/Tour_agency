@@ -14,19 +14,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication()
-                .withUser("user").password("password").roles("USER").and()
                 .withUser("admin").password("password").roles("USER", "ADMIN");
-        /*auth.jdbcAuthentication()
-                .authoritiesByUsernameQuery("select username,authority from authorities where username = ?")
-                .groupAuthoritiesByUsername("select g.id, g.group_name, ga.authority from " +
-                                            " groups g, group_members gm, group_authorities ga where " +
-                                            " gm.username = ? and g.id = ga.group_id and g.id = gm.group_id")
-                .usersByUsernameQuery("select username, password, true from my_user_table where username = ?");*/
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.formLogin()
+                .loginPage("/login.jsp")
                 .and()
                 .rememberMe()
                 .tokenValiditySeconds(2419200)

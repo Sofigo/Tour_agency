@@ -6,7 +6,9 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.persistence.criteria.CriteriaQuery;
 import java.io.Serializable;
+import java.util.List;
 
 public abstract class GenericDAOImpl<T, ID extends Serializable> implements GenericDAO<T, ID> {
     @Autowired
@@ -49,6 +51,13 @@ public abstract class GenericDAOImpl<T, ID extends Serializable> implements Gene
         if (t != null) {
             session.delete(t);
         }
+    }
+
+    @Override
+    public List<T> findAll() {
+        CriteriaQuery<T> c = sessionFactory.getCriteriaBuilder().createQuery(entityClass);
+        c.select(c.from(entityClass));
+        return sessionFactory.getCurrentSession().createQuery(c).getResultList();
     }
 
 

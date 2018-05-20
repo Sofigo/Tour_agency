@@ -1,5 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
-<DOCTYPE! html>
 <html>
  <head>
      <!--Import Google Icon Font-->
@@ -24,7 +24,7 @@
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
            <ul class="right hide-on-med-and-down">
             <li>
-              <a href="index.jsp">Головна</a>
+              <a href="../home">Головна</a>
             </li>
             <li>
              
@@ -32,8 +32,8 @@
   <a class='dropdown-trigger btn pink' href='#' data-target='dropdown1'>Інформація про</a>
   <!-- Dropdown Structure -->
   <ul id='dropdown1' class='dropdown-content'>
-    <li><a href="hotels.jsp">Готелі</a></li>
-    <li><a href="tours.jsp">Тури</a></li>
+    <li><a href="../hotels/all">Готелі</a></li>
+    <li><a href="../tours/all-by-city">Тури</a></li>
   </ul>
     <li><a href="#contact">Контакти</a></li>
   <!-- Modal Trigger -->
@@ -44,7 +44,7 @@
     <div class="modal-content">
       <h4><span class="cyan-text text-darken-4">Заповніть заяву і ми вам передзвонимо</span></h4>
        <div class="row">
-        <form class="col s12" action="/hotels.jsp">
+        <form class="col s12" action="/addForm">
           <div class="row">
             <div class="input-field black-text col s6"> 
               <input type="text" class="validate" id="first_name" value="Горшкова">
@@ -159,7 +159,7 @@
               <p>Стародавнє місто Стамбул з його історією та незабутньою культурою. Заворожує та дарує справжі відпочино тілом і душею.
               </p>
               <div class="card-action">
-          <a href="tours.html">Перейти</a>
+          <a href="TODO">Перейти</a>
         </div>
             </div>
           </div>
@@ -174,7 +174,7 @@
               <p>Місто кохання та щасливих людей! Опинившись тут ише один раз, Париж назавжди залишить свій романтичний слід у вашому серці.
               </p>
               <div class="card-action">
-          <a href="tours.jsp">Перейти</a>
+          <a href="TODO">Перейти</a>
         </div>
             </div>
           </div>
@@ -189,65 +189,63 @@
               <p>Чудовий,п`янкий Лондон - серце Великобританії. Різномаїття культур, насичена історія, домашні кафе - все це ви зустрінете саме в Лондоні.
               </p>
               <div class="card-action">
-          <a href="tours.jsp">Перейти</a>
+          <a href="TODO">Перейти</a>
         </div>
             </div>
           </div>
         </div>
       </div>
+        </div>
   </section>
 <!-- Search Form -->
 <div class="row">
 <section id="search" class="section-search scrollspy">
   <div class="container">
     <div class="row">
-      <form class="col s12 m7" action="#!">
+      <form class="col s12 m7" action="../tours/searchTours" method="get">
         <div class="card-panel grey-text">
           <h4>Пошук туру</h4>
   <div class="input-field punkt-default">
-    <select>
+    <select name="airport">
       <option value="" disabled selected>Оберіть</option>
-      <option value="1">Жуляни</option>
-      <option value="2">Бориспіль</option>
-      <option value="3">Львів</option>
+        <c:forEach items="${departureAirports}" var="airportName">
+            <option value="${airportName}">${airportName}</option>
+        </c:forEach>
     </select>
     <label>Місто вильоту</label>
   </div>
  <div class="input-field punkt-default">
-    <select>
+    <select name="city">
       <option value="" disabled selected>Оберіть</option>
-      <option value="1">Стамбул</option>
-      <option value="2">Париж</option>
-      <option value="3">Дубай</option>
-      <option value="3">Балі</option>
-      <option value="3">Лісабон</option>
+        <c:forEach items="${cityNames}" var="cityName">
+            <option value="${cityName}">${cityName}</option>
+        </c:forEach>
     </select>
     <label>Пункт призначення</label>
   </div>
-  <select class="price-default">
+  <select name="price" class="price-default">
     <option value="" disabled selected>Ціна до</option>
-    <option value="1">200 $</option>
-    <option value="2">400 $</option>
-    <option value="3">2000 $</option>
+    <option value="500">500 $</option>
+    <option value="2000">2000 $</option>
+    <option value="4000">4000 $</option>
   </select>
-  <select class="hotel-default">
+  <select name="stars" class="hotel-default">
     <option value="" disabled selected>Тип готелю</option>
-    <option value="1">3*</option>
-    <option value="2">4*</option>
-    <option value="3">5*</option>
+    <option value="3">3*</option>
+    <option value="4">4*</option>
+    <option value="5">5*</option>
   </select>
-  <select class="meal-default">
+  <select name="food" class="meal-default">
     <label>Тип харчування</label>
     <option value="" disabled selected>Будь-яке харчування</option>
-    <option value="1">Сніданок</option>
-    <option value="2">Сніданок - Обід</option>
-    <option value="3">Сніданок - Вечеря</option>
-    <option value="4">Обід</option>
-    <option value="5">Все включеноі</option>
+
+      <c:forEach items="${foodTypes}" var="foodType">
+          <option value="${foodType}">${foodType}</option>
+      </c:forEach>
 
   </select>
    <div class="input-field data-default">
-      <input type="text" class="datepicker">
+      <input  name="date" type="text" class="datepicker">
     <label>Дата вильоту</label>
     </div> 
     <div class="modal-footer">
@@ -255,7 +253,6 @@
   </div>
   </div>
 </form>
-</div>
 </div>
 </div>
 </section>

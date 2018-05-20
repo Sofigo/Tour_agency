@@ -21,7 +21,7 @@ public class Tour implements Serializable {
     private String departureAirport;
 
     @NotNull
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     private Hotel hotel;
 
     @Min(1)
@@ -34,4 +34,64 @@ public class Tour implements Serializable {
     private long price;
 
     private String foodType;
+
+    public String getFoodType() {
+        return foodType;
+    }
+
+    public void setFoodType(String foodType) {
+        this.foodType = foodType;
+    }
+
+    public Date getDepartureDate() {
+        return departureDate;
+    }
+
+    public void setDepartureDate(Date departureDate) {
+        this.departureDate = departureDate;
+    }
+
+    public String getDepartureAirport() {
+        return departureAirport;
+    }
+
+    public void setDepartureAirport(String departureAirport) {
+        this.departureAirport = departureAirport;
+    }
+
+    public Hotel getHotel() {
+        return hotel;
+    }
+
+    public void setHotel(Hotel hotel) {
+        this.hotel = hotel;
+    }
+
+    public int getNightsAmount() {
+        return nightsAmount;
+    }
+
+    public void setNightsAmount(int nightsAmount) {
+        this.nightsAmount = nightsAmount;
+    }
+
+    public int getAdultsAmount() {
+        return adultsAmount;
+    }
+
+    public void setAdultsAmount(int adultsAmount) {
+        this.adultsAmount = adultsAmount;
+    }
+
+    public long getPrice() {
+        return price;
+    }
+
+    public void setPrice(long price) {
+        this.price = price;
+    }
+
+    public long getId() {
+        return id;
+    }
 }

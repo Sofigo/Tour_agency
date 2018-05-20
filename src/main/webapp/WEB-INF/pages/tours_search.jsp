@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <DOCTYPE! html>
 <html>
@@ -26,7 +27,7 @@
           <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
            <ul class="right hide-on-med-and-down">
             <li>
-              <a href="index.jsp">Головна</a>
+              <a href="../home">Головна</a>
             </li>
            
 
@@ -34,8 +35,8 @@
   <li><a class='dropdown-trigger btn pink' href='#' data-target='dropdown1'>Інформація про</a></li>
   <!-- Dropdown Structure -->
   <ul id='dropdown1' class='dropdown-content'>
-    <li><a href="hotels.jsp">Готелі</a></li>
-    <li><a href="tours.jsp">Тури</a></li>
+      <li><a href="../hotels/all">Готелі</a></li>
+      <li><a href="../tours/all-by-city">Тури</a></li>
   </ul>
   <li><a href="#contact">Контакти</a></li>
   <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Заповнити заяву</a></li>
@@ -107,45 +108,52 @@
   </script>
 
   <!-- City description -->
-  <!--City 1-->
-  <div class="row">
-  <div class="col s6">
-  <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="img/hot10.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Бориспіль - Париж - 12.06.2018 <i class="material-icons right">more_vert</i></span>
-      <p>* ціна - це вся вартість за тур. Сюди входить вартість перельоту, харчування та проживання</p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Hotel de Louvre<i class="material-icons right">close</i></span>
-      <p><table>
-        <thead>
-          <tr>
-              <th>Дата вильоту</th>
-              <th>Кількість ночей</th>
-              <th>Кількість людей</th>
-              <th>Тип харчування</th>
-              <th>Тип готелю</th>
-              <th>Ціна*</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>12.06.2018</td>
-            <td>7</td>
-            <td>2</td>
-            <td>Все включено</td>
-            <td>5 зірок</td>
-            <td>2450$</td>
-          </tr>
-        </tbody>
-      </table></p>
-    </div>
-  </div>
-</div>
-</div>
+
+      <c:forEach items="${tours}" var="tour">
+
+          <div class="row">
+              <div class="col s6">
+                  <div class="card">
+                      <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="../${tour.hotel.image}">
+                      </div>
+                      <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">${tour.departureAirport} - ${tour.hotel.city.name} - ${tour.departureDate} <i class="material-icons right">more_vert</i></span>
+                          <p>* ціна - це вся вартість за тур. Сюди входить вартість перельоту, харчування та проживання</p>
+                      </div>
+                      <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Hotel de Louvre<i class="material-icons right">close</i></span>
+                          <p><table>
+                          <thead>
+                          <tr>
+                              <th>Дата вильоту</th>
+                              <th>Кількість ночей</th>
+                              <th>Кількість людей</th>
+                              <th>Тип харчування</th>
+                              <th>Тип готелю</th>
+                              <th>Ціна*</th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                              <td>${tour.departureDate}</td>
+                              <td>${tour.nightsAmount}</td>
+                              <td>${tour.adultsAmount}</td>
+                              <td>${tour.foodType}</td>
+                              <td>${tour.hotel.starsAmount}</td>
+                              <td>${tour.price}</td>
+                          </tr>
+
+
+                          </tbody>
+                      </table></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </c:forEach>
+
 </body>
 <!-- Footer -->
   <footer class="page-footer cyan">

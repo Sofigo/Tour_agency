@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <DOCTYPE! html>
 <html>
@@ -26,7 +27,7 @@
           <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
            <ul class="right hide-on-med-and-down">
             <li>
-              <a href="index.jsp">Головна</a>
+              <a href="../home">Головна</a>
             </li>
            
 
@@ -34,8 +35,8 @@
   <li><a class='dropdown-trigger btn pink' href='#' data-target='dropdown1'>Інформація про</a></li>
   <!-- Dropdown Structure -->
   <ul id='dropdown1' class='dropdown-content'>
-    <li><a href="hotels.jsp">Готелі</a></li>
-    <li><a href="tours.jsp">Тури</a></li>
+    <li><a href="../hotels/all">Готелі</a></li>
+    <li><a href="../tours/all-by-city">Тури</a></li>
   </ul>
   <li><a href="#contact">Контакти</a></li>
   <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Заповнити заяву</a></li>
@@ -105,6 +106,64 @@
     $('.modal').modal();
   });
   </script>
+
+<c:forEach items="${cities}" var="city" varStatus="myIndex">
+  <c:if test = "getCategoryIndex(${myIndex.index}) % 2 == 0">
+      <div class="row">
+  </c:if>
+
+    <div class="col s6">
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="../${city.image}">
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">${city.name}<i class="material-icons right">more_vert</i></span>
+                <p>* ціна - це вся вартість за тур. Сюди входить вартість перельоту, харчування та проживання</p>
+            </div>
+            <p class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Наявні тури ${city.name}<i class="material-icons right">close</i></span>
+                <p>
+                <table>
+                <thead>
+                <tr>
+                    <th>Місто вильоту</th>
+                    <th>Дата вильоту</th>
+                    <th>Кількість ночей</th>
+                    <th>Кількість людей</th>
+                    <th>Тип харчування</th>
+                    <th>Готель</th>
+                    <th>Ціна*</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <c:forEach items="${city.hotels}" var="hotel">
+                    <c:forEach items="${hotel.tours}" var="tour">
+                        <tr>
+                            <th>${tour.departureAirport}</th>
+                            <td>${tour.departureDate}</td>
+                            <td>${tour.nightsAmount}</td>
+                            <td>${tour.adultsAmount}</td>
+                            <td>${tour.foodType}</td>
+                            <td>${hotel.name}</td>
+                            <td>${tour.price}</td>
+                        </tr>
+                    </c:forEach>
+
+                </c:forEach>
+                </tbody>
+            </table>
+
+
+  </div>
+  </div>
+  </div>
+      <c:if test = "getCategoryIndex(${myIndex.index}) % 2 == 1">
+          </div>
+        </c:if>
+
+</c:forEach>
 
   <!-- City description -->
   <!--City 1-->
@@ -245,279 +304,7 @@
 </div>
 </div>
 
-<!--City 3-->
-<div class="row">
-  <div class="col s6">
-  <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="img/c3.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Дубаї<i class="material-icons right">more_vert</i></span>
-      <p>* ціна - це вся вартість за тур. Сюди входить вартість перельоту, харчування та проживання</p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Наявні тури в Дубаї<i class="material-icons right">close</i></span>
-      <p><table>
-        <thead>
-          <tr>
-              <th>Місто вильоту</th>
-              <th>Дата вильоту</th>
-              <th>Кількість ночей</th>
-              <th>Кількість людей</th>
-              <th>Тип харчування</th>
-              <th>Готель</th>
-              <th>Ціна</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>Львів</th>
-            <td>10.06.2018</td>
-            <td>8</td>
-            <td>2</td>
-            <td>Все включено</td>
-            <td>St Regis</td>
-            <td>2450$</td>
-          </tr>
-        </tbody>
-          <tr>
-            <th>Бориспіль</th>
-            <td>15.06.2018</td>
-            <td>10</td>
-            <td>1</td>
-            <td>Сніданок</td>
-            <td>Le Royal Meridien</td>
-            <td>2500$</td>
-          </tr>
-          <tr>
-            <th>Бориспіль</th>
-            <td>19.06.2018</td>
-            <td>6</td>
-            <td>2</td>
-            <td>Сніданок-вечеря</td>
-            <td>Ajman</td>
-            <td>3000$</td>
-          </tr>
-          <tr>
-            <th>Львів</th>
-            <td>25.07.2018</td>
-            <td>8</td>
-            <td>2</td>
-            <td>Все включено</td>
-            <td>Four Points</td>
-            <td>3500$</td>
-          </tr>
-        </tbody>
-      </table></p>
-    </div>
-  </div>
-</div>
-<!--City 4-->
-  <div class="col s6">
-  <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="img/c4.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Стамбул<i class="material-icons right">more_vert</i></span>
-      <p>* ціна - це вся вартість за тур. Сюди входить вартість перельоту, харчування та проживання</p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Наявні тури в Стамбулі<i class="material-icons right">close</i></span>
-      <p><table>
-        <thead>
-          <tr>
-              <th>Місто вильоту</th>
-              <th>Дата вильоту</th>
-              <th>Кількість ночей</th>
-              <th>Кількість людей</th>
-              <th>Тип харчування</th>
-              <th>Готель</th>
-              <th>Ціна</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>Бориспіль</th>
-            <td>11.06.2018</td>
-            <td>5</td>
-            <td>2</td>
-            <td>Все включено</td>
-            <td>Hilton</td>
-            <td>2650$</td>
-          </tr>
-        </tbody>
-          <tr>
-            <th>Бориспіль</th>
-            <td>23.06.2018</td>
-            <td>10</td>
-            <td>1</td>
-            <td>Сніданок</td>
-            <td>Plaza</td>
-            <td>2400$</td>
-          </tr>
-          <tr>
-            <th>Бориспіль</th>
-            <td>27.06.2018</td>
-            <td>3</td>
-            <td>2</td>
-            <td>Все включено</td>
-            <td>Family</td>
-            <td>2000$</td>
-          </tr>
-          <tr>
-            <th>Жуляни</th>
-            <td>01.07.2018</td>
-            <td>7</td>
-            <td>2</td>
-            <td>Обід</td>
-            <td>Glorious</td>
-            <td>3000$</td>
-          </tr>
-        </tbody>
-      </table></p>
-    </div>
-  </div>
-</div>
-</div>
-  <!--City 5-->
-  <div class="row">
-  <div class="col s6">
-  <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="img/c5.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Португалія<i class="material-icons right">more_vert</i></span>
-      <p>* ціна - це вся вартість за тур. Сюди входить вартість перельоту, харчування та проживання</p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Наявні тури в Португалії<i class="material-icons right">close</i></span>
-      <p><table>
-        <thead>
-          <tr>
-              <th>Місто вильоту</th>
-              <th>Дата вильоту</th>
-              <th>Кількість ночей</th>
-              <th>Кількість людей</th>            
-              <th>Тип харчування</th>
-              <th>Готель</th>
-              <th>Ціна</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>Жуляни</th>
-            <td>14.06.2018</td>
-            <td>7</td>
-            <td>2</td>
-            <td>Все включено</td>
-            <td>Soko</td>
-            <td>2350$</td>
-          </tr>
-        </tbody>
-          <tr>
-            <th>Бориспіль</th>
-            <td>19.06.2018</td>
-            <td>10</td>
-            <td>1</td>
-            <td>Сніданок</td>
-            <td>Pestana</td>
-            <td>2600$</td>
-          </tr>
-          <tr>
-            <th>Бориспіль</th>
-            <td>20.06.2018</td>
-            <td>5</td>
-            <td>2</td>
-            <td>Сніданок-вечеря</td>
-            <td>Madeira</td>
-            <td>3000$</td>
-          </tr>
-          <tr>
-            <th>Львів</th>
-            <td>13.07.2018</td>
-            <td>7</td>
-            <td>2</td>
-            <td>Все включено</td>
-            <td>Boma</td>
-            <td>3500$</td>
-          </tr>
-        </tbody>
-      </table></p>
-    </div>
-  </div>
-</div>
 
-<!--City 6-->
-  <div class="col s6">
-  <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="img/c6.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Балі<i class="material-icons right">more_vert</i></span>
-      <p>* ціна - це вся вартість за тур. Сюди входить вартість перельоту, харчування та проживання</p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Наявні тури на Балі<i class="material-icons right">close</i></span>
-      <p><table>
-        <thead>
-          <tr>
-              <th>Місто вильоту</th>
-              <th>Дата вильоту</th>
-              <th>Кількість ночей</th>
-              <th>Кількість людей</th>
-              <th>Тип харчування</th>
-              <th>Готель</th>
-              <th>Ціна</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>Бориспіль</th>
-            <td>15.06.2018</td>
-            <td>7</td>
-            <td>2</td>
-            <td>Все включено</td>
-            <td>St Regis</td>
-            <td>2450$</td>
-          </tr>
-        </tbody>
-          <tr>
-            <th>Львів</th>
-            <td>24.06.2018</td>
-            <td>8</td>
-            <td>1</td>
-            <td>Сніданок-вечеря</td>
-            <td>Belissimo</td>
-            <td>2000$</td>
-          </tr>
-          <tr>
-            <th>Бориспіль</th>
-            <td>03.07.2018</td>
-            <td>5</td>
-            <td>2</td>
-            <td>Сніданок-вечеря</td>
-            <td>Heritage</td>
-            <td>3700$</td>
-          </tr>
-          <tr>
-            <th>Львів</th>
-            <td>23.07.2018</td>
-            <td>10</td>
-            <td>2</td>
-            <td>Все включено</td>
-            <td>Four seasons</td>
-            <td>4000$</td>
-          </tr>
-        </tbody>
-      </table></p>
-    </div>
-  </div>
-</div>
-</div>
 </body>
 <!-- Footer -->
   <footer class="page-footer cyan">
